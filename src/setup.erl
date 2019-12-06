@@ -1053,7 +1053,7 @@ find_hooks_(Mode, Modes, Applications) ->
               end
       end, orddict:new(), Applications).
 
-f_find_hooks_(Hook, A, Mode, Modes, Acc) ->
+f_find_hooks_(Hook, A, _Mode, Modes, Acc) ->
     IsSetup = lists:member(setup, Modes),
     case Hook of
         {Mode1, [{_, {_,_,_}}|_] = L} ->

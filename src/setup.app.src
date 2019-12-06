@@ -17,7 +17,7 @@
 {application, setup,
  [
   {description, "Generic setup application for Erlang-based systems"},
-  {vsn, git},
+  {vsn, "2.0.3"},
   {registered, []},
   {applications, [
                   kernel,
@@ -27,7 +27,6 @@
   {start_phases, [{run_setup, []}]},
   {env, []},
 
-  {maintainers, ["Ulf Wiger"]},
   {licenses, ["Apache 2.0"]},
   {links, [{"Github", "https://github.com/uwiger/setup"}]},
   %% List copied from rebar3_hex.hrl ?DEFAULT_FILES, adding "Makefile"
